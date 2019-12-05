@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="XAML.QuotesPage">
+    <ContentPage.Padding>
+        <OnPlatform x:TypeArguments="Thickness"
+                    iOS="20, 20, 20, 20"
+                    Android ="20, 30, 20, 20"/>
+    </ContentPage.Padding>
+    <ContentPage.Content>
+        <StackLayout>
+            <Button Text="Next" x:Name="button" Clicked="button_Clicked"></Button>            
+            <Label Text="Welcome to Xamarin.Forms!" x:Name="label1"/>            
+            <Slider Maximum="50" Minimum="16" x:Name="slider" ValueChanged="slider_ValueChanged"></Slider>            
+            <Label Text="Quest" x:Name="label2"></Label>
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
